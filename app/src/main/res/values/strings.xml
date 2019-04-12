@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="button1">Horário</string>
+    <string name="button2">Atividades Extracurriculares</string>
+    <string name="button3">Ementas</string>
+    <string name="button4">Eventos</string>
+    <string name="button5">Anúncios</string>
+    <string name="button6">Conversar</string>
+    <string name="button7">Pauta</string>
+    <string name="button8">Faltas</string>
+    <string name="button9">Meus Dados</string>
+    <string name="personImage">TODO</string>
+    <string name="more">menu</string>
+    <string name="todo">TODO</string>
+</resources>
