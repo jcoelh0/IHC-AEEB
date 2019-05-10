@@ -5,8 +5,8 @@
     tools:ignore="ExtraText">
     <item
         android:id="@+id/settings"
-        android:title="Settings" />
+        android:title="@string/settings" />
     <item
         android:id="@+id/about"
-        android:title="About" />
+        android:title="@string/about" />
 </menu>
