@@ -19,22 +19,43 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toast.makeText(this,"Your Message", Toast.LENGTH_LONG).show();
-        Button buttonOne = findViewById(R.id.button5);
-        buttonOne.setOnClickListener(new View.OnClickListener() {
+
+        Button anunciosBttn = findViewById(R.id.button5);
+        anunciosBttn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 System.out.println("Button Clicked");
-                Intent activity2Intent = new Intent(getApplicationContext(), Anuncios.class);
-                startActivity(activity2Intent);
+                Intent anuncios = new Intent(getApplicationContext(), Anuncios.class);
+                startActivity(anuncios);
             }
         });
+
+        Button attvExtraBttn = findViewById(R.id.button2);
+        attvExtraBttn.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                System.out.println("Button Clicked");
+                Intent attvExtra = new Intent(getApplicationContext(), AtividadesExtracur.class);
+                startActivity(attvExtra);
+            }
+        });
+
+        /*Button  = findViewById(R.id.button5);
+        .setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                System.out.println("Button Clicked");
+                Intent anuncios = new Intent(getApplicationContext(), Anuncios.class);
+                startActivity(anuncios);
+            }
+        });*/
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu, menu);
-        Toast toast = Toast.makeText(this, "menu opened", Toast.LENGTH_LONG);
-        toast.show();
+
+        //Toast toast = Toast.makeText(this, "menu opened", Toast.LENGTH_LONG);
+        //toast.show();
+
         return true;
     }
 

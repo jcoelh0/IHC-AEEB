@@ -17,4 +17,8 @@
     <string name="textview">TextView</string>
     <string name="button0">Definições</string>
     <string name="voltar">Voltar</string>
+    <string name="pai_professor">Pai/Professor</string>
+    <string name="title_activity_atividades_extracur">Atividades Extracurriculares</string>
+    <string name="atual">Atual</string>
+    <string name="passado">Passado</string>
 </resources>
