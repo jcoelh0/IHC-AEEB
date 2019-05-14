@@ -9,6 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Anuncios_Add"
+            android:label="Adicionar Novo Anúncio"
+            android:parentActivityName=".Anuncios">
+        </activity>
         <activity
             android:name=".AtividadesExtracur"
             android:label="@string/title_activity_atividades_extracur"
@@ -19,7 +23,10 @@
         </activity>
         <activity
             android:name=".Anuncios"
-            android:parentActivityName=".MainActivity"></activity>
+            android:label="Anúncios"
+            android:parentActivityName=".MainActivity">
+
+        </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

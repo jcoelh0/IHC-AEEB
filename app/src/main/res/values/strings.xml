@@ -21,4 +21,7 @@
     <string name="title_activity_atividades_extracur">Atividades Extracurriculares</string>
     <string name="atual">Atual</string>
     <string name="passado">Passado</string>
+    <string name="hint">hint</string>
+    <string name="texto_anuncio">Texto do anúncio</string>
+    <string name="titulo">Título</string>
 </resources>
