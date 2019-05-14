@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">AEEB</string>
     <string name="button1">Horários</string>
     <string name="button2">Atividades Extracurriculares</string>
     <string name="button3">Ementas</string>
@@ -24,4 +24,8 @@
     <string name="hint">hint</string>
     <string name="texto_anuncio">Texto do anúncio</string>
     <string name="titulo">Título</string>
+    <string name="add">add</string>
+    <string name="certo">certo</string>
+    <string name="Atividade">atividade</string>
+    <string name="descriçao">Descrição</string>
 </resources>

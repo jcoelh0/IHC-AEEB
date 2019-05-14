@@ -26,6 +26,16 @@
             android:text="@string/passado" />
 
     </android.support.design.widget.TabLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="96dp" />
+
 </android.support.constraint.ConstraintLayout>
 
 
