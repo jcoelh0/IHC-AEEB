@@ -9,16 +9,36 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Switch;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    // variavel para objeto Switch seleciona tipo de usuario
+    Switch usuarioSwitch = (Switch) findViewById(R.id.switch1);
+    boolean tipoUsuario = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toast.makeText(this,"Your Message", Toast.LENGTH_LONG).show();
+
+        // verifica o estado atual do Switch (true or false) e coloca na variavel 'tipoUsuario'
+        // false = Aluno; true = Professor;
+        usuarioSwitch = (Switch) findViewById(R.id.switch1);
+        if(usuarioSwitch.isChecked())
+            tipoUsuario = true;
+        else
+            tipoUsuario = false;
+
+        TextView textElement = (TextView) findViewById(R.id.textView2);
+        if(tipoUsuario==false)
+            textElement.setText("Aluno: Ana Marisa");
+        else
+            textElement.setText("Professor: Carlos");
+
 
         Button anunciosBttn = findViewById(R.id.button5);
         anunciosBttn.setOnClickListener(new View.OnClickListener() {
@@ -46,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(anuncios);
             }
         });*/
+
     }
 
     @Override
