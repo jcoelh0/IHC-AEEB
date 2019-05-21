@@ -8,7 +8,6 @@ import android.view.MenuItem;
 
 public class AtividadesExtracur extends AppCompatActivity {
 
-    boolean tipoUsuario = MainActivity.getTipoUsuario();
     String strNovaAtiv = Anuncios_Add.getStrNovoAnuncio();
     String dataNovaAtiv = Anuncios_Add.getDataNovoAnuncio();
 
@@ -24,9 +23,8 @@ public class AtividadesExtracur extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        if(tipoUsuario){
+        if(MainActivity.getTipoUsuario())
             getMenuInflater().inflate(R.menu.menu_novo, menu);
-        }
         return true;
     }
 
