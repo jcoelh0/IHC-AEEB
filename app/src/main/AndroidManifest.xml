@@ -11,11 +11,14 @@
         android:theme="@style/AppTheme">
         <activity android:name=".Horario"></activity>
         <activity android:name=".Ementa" />
-        <activity android:name=".AtividadesExtracur_Add" />
         <activity
             android:name=".Anuncios_Add"
             android:label="Adicionar Novo Anúncio"
             android:parentActivityName=".Anuncios" />
+        <activity
+            android:name=".AtividadesExtracur_Add"
+            android:label="Adicionar Nova Atividade"
+            android:parentActivityName=".AtividadesExtracur" />
         <activity
             android:name=".AtividadesExtracur"
             android:label="@string/title_activity_atividades_extracur"
