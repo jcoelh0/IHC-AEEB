@@ -15,7 +15,8 @@ public class Ementa extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ementa);
-
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        setTitle("Ementa");
         final ListView lv = (ListView) findViewById(R.id.listView1);
 
         String[] pratos = new String[] {
