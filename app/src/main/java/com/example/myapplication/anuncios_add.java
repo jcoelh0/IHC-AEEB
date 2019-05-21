@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
 
 public class Anuncios_Add extends AppCompatActivity {
 
@@ -11,4 +12,13 @@ public class Anuncios_Add extends AppCompatActivity {
         setContentView(R.layout.activity_anuncios_add);
         
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_certo, menu);
+
+        return true;
+    }
+
 }

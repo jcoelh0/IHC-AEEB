@@ -14,10 +14,10 @@
     <string name="todo">TODO</string>
     <string name="settings">Settings</string>
     <string name="about">About</string>
-    <string name="textview">TextView</string>
+    <string name="textview">Aluno: Ana Marisa Rondão</string>
     <string name="button0">Definições</string>
     <string name="voltar">Voltar</string>
-    <string name="pai_professor">Pai/Professor</string>
+    <string name="pai_professor">Aluno/Professor</string>
     <string name="title_activity_atividades_extracur">Atividades Extracurriculares</string>
     <string name="atual">Atual</string>
     <string name="passado">Passado</string>
@@ -28,4 +28,6 @@
     <string name="certo">certo</string>
     <string name="Atividade">atividade</string>
     <string name="descriçao">Descrição</string>
+    <string name="descri_o">Descrição</string>
+    <string name="atividade">Atividade</string>
 </resources>
