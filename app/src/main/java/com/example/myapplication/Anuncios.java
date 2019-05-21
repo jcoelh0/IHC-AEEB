@@ -1,10 +1,13 @@
 package com.example.myapplication;
 
 import android.content.Intent;
+import android.support.design.widget.TabLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.CompoundButton;
 import android.widget.TextView;
 import java.util.Date;
 
@@ -14,16 +17,12 @@ public class Anuncios extends AppCompatActivity {
 
     boolean tipoUsuario = MainActivity.getTipoUsuario();
     String strNovoAnuncio = Anuncios_Add.getStrNovoAnuncio();
-    Date dataNovoAnuncio = Anuncios_Add.getDataNovoAnuncio();
+    String dataNovoAnuncio = Anuncios_Add.getDataNovoAnuncio();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_anuncios);
-
-        //ArrayList<String[]> arrayAnuncios = new ArrayList<String[]>();
-        //arrayAnuncios.add(new String[]{anuncio1.setText("Levar autorização de visita ao Museu, que foi entregue ao aluno, assinada pelo encarregado de educação");,"Data: 24/05/2019"});
-
 
         TextView anuncio1 = (TextView) findViewById(R.id.textView4);
         TextView dataAnuncio1 = (TextView) findViewById(R.id.textView5);
@@ -35,12 +34,28 @@ public class Anuncios extends AppCompatActivity {
         TextView dataAnuncio4 = (TextView) findViewById(R.id.textView11);
 
         anuncio1.setText("Levar autorização de visita ao Museu, que foi entregue ao aluno, assinada pelo encarregado de educação");
-        dataAnuncio1.setText("Data: 24/05/2019");
+        dataAnuncio1.setText("Data: 24/5/2019");
 
         anuncio2.setText(strNovoAnuncio);
         dataAnuncio2.setText(dataNovoAnuncio);
 
+ /*
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabLayout);
+        // verifica qual tab esta selecionada
+        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                // while selecting the tab
+            }
+        });
 
+        if(!(tabLayout.getSelectedTabPosition()==0)){
+            anuncio1.setVisibility(View.INVISIBLE);
+            dataAnuncio1.setVisibility(View.INVISIBLE);
+            anuncio2.setVisibility(View.INVISIBLE);
+            dataAnuncio2.setVisibility(View.INVISIBLE);
+        }
+*/
 
     }
 

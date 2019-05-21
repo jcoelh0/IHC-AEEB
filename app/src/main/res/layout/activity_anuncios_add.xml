@@ -24,12 +24,18 @@
             android:hint="@string/descri_o" />
     </android.support.design.widget.TextInputLayout>
 
-    <CalendarView
-        android:id="@+id/calendarView1"
+    <DatePicker
+        android:id="@+id/datePicker1"
         android:layout_width="314dp"
         android:layout_height="301dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+
+
 </android.support.constraint.ConstraintLayout>

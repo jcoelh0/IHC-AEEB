@@ -7,20 +7,22 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.CalendarView;
+import android.widget.DatePicker;
 import android.widget.TextView;
 import java.util.Date;
 
 public class Anuncios_Add extends AppCompatActivity {
 
     private static String strNovoAnuncio = new String();
-    private static Date dataNovoAnuncio = new Date();
+    private static String dataNovoAnuncio = new String();
 
     public static String getStrNovoAnuncio(){
         return strNovoAnuncio;
     }
 
-    public static Date getDataNovoAnuncio(){
+    public static String getDataNovoAnuncio(){
         return dataNovoAnuncio;
     }
 
@@ -42,25 +44,16 @@ public class Anuncios_Add extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         TextInputLayout descAnuncio = (TextInputLayout) findViewById(R.id.textInputLayout2);
-        CalendarView dataAnuncio = (CalendarView) findViewById(R.id.calendarView1);
+        DatePicker dataAnuncio = (DatePicker) findViewById(R.id.datePicker1);
 
         if(item.getItemId()==R.id.novo_anuncio){
             strNovoAnuncio = descAnuncio.getEditText().getText().toString();
-            dataNovoAnuncio = dataAnuncio.getDate();
+            dataNovoAnuncio = "Data: "+ dataAnuncio.getDayOfMonth()+"/"+ dataAnuncio.getMonth()+"/"+dataAnuncio.getYear();
         } else {
             strNovoAnuncio = "";
-            dataNovoAnuncio = null;
+            dataNovoAnuncio= "";
         }
-/*
-        switch(item.getItemId()) {
-            case R.id.novo_anuncio:
-                Intent anuncios = new Intent(getApplicationContext(), Anuncios.class);
-                startActivity(anuncios);
-                break;
-            default:
-                return super.onOptionsItemSelected(item);
-        }
-*/
+
         Intent anuncios = new Intent(getApplicationContext(), Anuncios.class);
         startActivity(anuncios);
         return true;
