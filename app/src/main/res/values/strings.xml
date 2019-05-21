@@ -28,10 +28,17 @@
     <string name="certo">certo</string>
     <string name="Atividade">atividade</string>
     <string name="descriçao">Descrição</string>
-    <string name="visitaEstudo">Visita de estudo no dia 21/05/2019</string>
+    <string name="visitaEstudo">Visita de estudo</string>
     <string name="descriçaovisita">Visita de estudo a uma fábrica de têxtil, assinar folha até ao dia 15/05/2019</string>
     <string name="descri_o">Descrição</string>
     <string name="atividade">Atividade</string>
     <string name="anuncio1">TextView</string>
     <string name="dataAnuncio1">TextView</string>
+    <string name="horarioDia">Horário dia 21/05/2019</string>
+    <string name="segunda_feira">Segunda-feira</string>
+    <string name="ter_a_feira">Terça-feira</string>
+    <string name="quarta_feira">Quarta-feira</string>
+    <string name="quinta_feira">Quinta-feira</string>
+    <string name="sexta_feira">Sexta-feira</string>
+    <string name="EstudoMeio">Estudo do meio - 09:00/11:00</string>
 </resources>

@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AtividadesExtracur_Add"></activity>
+        <activity android:name=".Horario"></activity>
+        <activity android:name=".Ementa" />
+        <activity android:name=".AtividadesExtracur_Add" />
         <activity
             android:name=".Anuncios_Add"
             android:label="Adicionar Novo Anúncio"
@@ -34,6 +36,5 @@
             </intent-filter>
         </activity>
     </application>
-
 
 </manifest>

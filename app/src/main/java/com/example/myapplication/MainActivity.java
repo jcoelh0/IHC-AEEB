@@ -68,6 +68,24 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button ementaBttn = findViewById(R.id.button3);
+        ementaBttn.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                System.out.println("Button Clicked");
+                Intent ementa = new Intent(getApplicationContext(), Ementa.class);
+                startActivity(ementa);
+            }
+        });
+
+        Button horarioBttn = findViewById(R.id.button1);
+        horarioBttn.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                System.out.println("Button Clicked");
+                Intent horario = new Intent(getApplicationContext(), Horario.class);
+                startActivity(horario);
+            }
+        });
+
     }
 
     @Override
