@@ -8,6 +8,10 @@ import android.view.MenuItem;
 
 public class AtividadesExtracur extends AppCompatActivity {
 
+    boolean tipoUsuario = MainActivity.getTipoUsuario();
+    String strNovaAtiv = Anuncios_Add.getStrNovoAnuncio();
+    String dataNovaAtiv = Anuncios_Add.getDataNovoAnuncio();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -16,17 +20,29 @@ public class AtividadesExtracur extends AppCompatActivity {
 
     }
 
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_novo, menu);
+        if(tipoUsuario){
+            getMenuInflater().inflate(R.menu.menu_novo, menu);
+        }
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch(item.getItemId()) {
+            case R.id.novo_anuncio:
+                Intent attvExtra_add = new Intent(getApplicationContext(), AtividadesExtracur_Add.class);
+                startActivity(attvExtra_add);
+                break;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
 
         return true;
     }
 
-    public boolean onOptionsItemSelected(MenuItem item){
-        Intent attvExtra_add = new Intent(getApplicationContext(), AtividadesExtracur_Add.class);
-        startActivity(attvExtra_add);
-        return true;
-    }
+
 }
