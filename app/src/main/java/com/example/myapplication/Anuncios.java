@@ -6,13 +6,15 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
+import java.util.Date;
 
 import java.util.ArrayList;
 
 public class Anuncios extends AppCompatActivity {
 
     boolean tipoUsuario = MainActivity.getTipoUsuario();
-    private static String[] arrayNovoAnuncio = new String[3];
+    String strNovoAnuncio = Anuncios_Add.getStrNovoAnuncio();
+    Date dataNovoAnuncio = Anuncios_Add.getDataNovoAnuncio();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,14 +22,26 @@ public class Anuncios extends AppCompatActivity {
         setContentView(R.layout.activity_anuncios);
 
         //ArrayList<String[]> arrayAnuncios = new ArrayList<String[]>();
-        //arrayAnuncios.add(new String[]{"Levar autorização de visita ao Museu assinada","Na data especificada será feita uma visita ao Museu da cidade e para que o seu educando possa ir é preciso trazaer a autorização assinada.","yyyy/MM/dd"});
+        //arrayAnuncios.add(new String[]{anuncio1.setText("Levar autorização de visita ao Museu, que foi entregue ao aluno, assinada pelo encarregado de educação");,"Data: 24/05/2019"});
 
 
         TextView anuncio1 = (TextView) findViewById(R.id.textView4);
         TextView dataAnuncio1 = (TextView) findViewById(R.id.textView5);
+        TextView anuncio2 = (TextView) findViewById(R.id.textView6);
+        TextView dataAnuncio2 = (TextView) findViewById(R.id.textView7);
+        TextView anuncio3 = (TextView) findViewById(R.id.textView8);
+        TextView dataAnuncio3 = (TextView) findViewById(R.id.textView9);
+        TextView anuncio4 = (TextView) findViewById(R.id.textView10);
+        TextView dataAnuncio4 = (TextView) findViewById(R.id.textView11);
 
-        anuncio1.setText("Levar autorização de visita ao Museu assinada pelo encarregado de educação");
+        anuncio1.setText("Levar autorização de visita ao Museu, que foi entregue ao aluno, assinada pelo encarregado de educação");
         dataAnuncio1.setText("Data: 24/05/2019");
+
+        anuncio2.setText(strNovoAnuncio);
+        dataAnuncio2.setText(dataNovoAnuncio);
+
+
+
     }
 
     @Override

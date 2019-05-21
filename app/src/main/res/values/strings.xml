@@ -30,6 +30,6 @@
     <string name="descriçao">Descrição</string>
     <string name="descri_o">Descrição</string>
     <string name="atividade">Atividade</string>
-    <string name="anuncio1">TextView</string>
-    <string name="dataAnuncio1">TextView</string>
+    <string name="anuncio1"></string>
+    <string name="dataAnuncio1"></string>
 </resources>
