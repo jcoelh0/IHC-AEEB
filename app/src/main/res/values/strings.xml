@@ -41,4 +41,8 @@
     <string name="EstudoMeio">Estudo do meio - 09:00/11:00</string>
     <string name="anuncio1"></string>
     <string name="dataAnuncio1"></string>
+    <string name="data_21_05_2019">Data: 28/05/2019</string>
+    <string name="tituloAtiv">textView</string>
+    <string name="descAtiv">textView</string>
+    <string name="dataAtiv">Data: 21/05/2019</string>
 </resources>
