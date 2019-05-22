@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toast.makeText(this,"Your Message", Toast.LENGTH_LONG).show();
+        //Toast.makeText(this,"Your Message", Toast.LENGTH_LONG).show();
 
         // variavel para objeto Switch seleciona tipo de usuario
         Switch usuarioSwitch = (Switch) findViewById(R.id.switch1);

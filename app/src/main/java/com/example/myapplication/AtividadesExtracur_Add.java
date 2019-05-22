@@ -56,8 +56,8 @@ public class AtividadesExtracur_Add extends AppCompatActivity {
             dataNovaAtiv= "";
         }
 
-        Intent anuncios = new Intent(getApplicationContext(), Anuncios.class);
-        startActivity(anuncios);
+        navigateUpTo(new Intent(getBaseContext(), MainActivity.class));
+        Toast.makeText(this,"Atividade Adicionada.", Toast.LENGTH_SHORT).show();
         return true;
     }
 }

@@ -10,8 +10,6 @@ public class Horario extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_horario);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        setTitle("Horário");
     }
 
     @Override

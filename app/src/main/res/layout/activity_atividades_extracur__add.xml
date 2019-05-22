@@ -38,7 +38,7 @@
         <android.support.design.widget.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="143dp"
-            android:hint="@string/descri_o" />
+            android:hint="@string/descri_o"/>
     </android.support.design.widget.TextInputLayout>
 
     <DatePicker

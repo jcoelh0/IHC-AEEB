@@ -11,6 +11,8 @@ import android.view.View;
 import android.widget.CalendarView;
 import android.widget.DatePicker;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import java.util.Date;
 
 public class Anuncios_Add extends AppCompatActivity {
@@ -54,8 +56,8 @@ public class Anuncios_Add extends AppCompatActivity {
             dataNovoAnuncio= "";
         }
 
-        Intent anuncios = new Intent(getApplicationContext(), Anuncios.class);
-        startActivity(anuncios);
+        navigateUpTo(new Intent(getBaseContext(), Anuncios.class));
+        Toast.makeText(this,"Anúncio Adicionado.", Toast.LENGTH_SHORT).show();
         return true;
     }
 

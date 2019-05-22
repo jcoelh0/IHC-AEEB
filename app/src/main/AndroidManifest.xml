@@ -9,8 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Horario"></activity>
-        <activity android:name=".Ementa" />
+        <activity
+            android:name=".Horario"
+            android:label="Horário"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".Ementa"
+            android:label="Ementa"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".Anuncios_Add"
             android:label="Adicionar Novo Anúncio"
