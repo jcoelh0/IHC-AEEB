@@ -16,14 +16,19 @@ import java.io.UnsupportedEncodingException;
 
 public class AtividadesExtracur_Add extends AppCompatActivity {
 
-    private static String strNovaAtiv = new String();
+    private static String tituloNovaAtiv = new String();
+    private static String descNovaAtiv = new String();
     private static String dataNovaAtiv = new String();
 
-    public static String getStrNovoAnuncio(){
-        return strNovaAtiv;
+    public static String getTituloNovaAtiv(){
+        return tituloNovaAtiv;
     }
 
-    public static String getDataNovoAnuncio(){
+    public static String getDescNovaAtiv(){
+        return descNovaAtiv;
+    }
+
+    public static String getDataNovaAtiv(){
         return dataNovaAtiv;
     }
 
@@ -45,14 +50,17 @@ public class AtividadesExtracur_Add extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        TextInputLayout tituloAtiv = (TextInputLayout) findViewById(R.id.textInputLayout1);
         TextInputLayout descAtiv = (TextInputLayout) findViewById(R.id.textInputLayout2);
         DatePicker dataAtiv = (DatePicker) findViewById(R.id.datePicker1);
 
         if(item.getItemId()==R.id.novo_anuncio){
-            strNovaAtiv = descAtiv.getEditText().getText().toString();
+
+            tituloNovaAtiv = tituloAtiv.getEditText().getText().toString();
+            descNovaAtiv = descAtiv.getEditText().getText().toString();
             dataNovaAtiv = "Data: "+ dataAtiv.getDayOfMonth()+"/"+ dataAtiv.getMonth()+"/"+dataAtiv.getYear();
         } else {
-            strNovaAtiv = "";
+            tituloNovaAtiv = "";
             dataNovaAtiv= "";
         }
 

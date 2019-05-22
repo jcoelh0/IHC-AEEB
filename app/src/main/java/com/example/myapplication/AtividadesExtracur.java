@@ -5,17 +5,26 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 public class AtividadesExtracur extends AppCompatActivity {
 
-    String strNovaAtiv = Anuncios_Add.getStrNovoAnuncio();
-    String dataNovaAtiv = Anuncios_Add.getDataNovoAnuncio();
+    String tituloNovaAtiv = AtividadesExtracur_Add.getTituloNovaAtiv();
+    String descNovaAtiv = AtividadesExtracur_Add.getDescNovaAtiv();
+    String dataNovaAtiv = AtividadesExtracur_Add.getDataNovaAtiv();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_atividades_extracur);
 
+        TextView tituloAtiv2 = (TextView) findViewById(R.id.textView18);
+        TextView descAtiv2 = (TextView) findViewById(R.id.textView19);
+        TextView dataAtiv2 = (TextView) findViewById(R.id.textView20);
+
+        tituloAtiv2.setText(tituloNovaAtiv);
+        descAtiv2.setText(descNovaAtiv);
+        dataAtiv2.setText(dataNovaAtiv);
 
     }
 

@@ -9,9 +9,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.TextView;
-import java.util.Date;
+import java.lang.Object;
 
-import java.util.ArrayList;
 
 public class Anuncios extends AppCompatActivity {
 
@@ -28,26 +27,24 @@ public class Anuncios extends AppCompatActivity {
         TextView dataAnuncio1 = (TextView) findViewById(R.id.textView5);
         TextView anuncio2 = (TextView) findViewById(R.id.textView6);
         TextView dataAnuncio2 = (TextView) findViewById(R.id.textView7);
-        TextView anuncio3 = (TextView) findViewById(R.id.textView8);
+        //TextView anuncio3 = (TextView) findViewById(R.id.textView8);
         TextView dataAnuncio3 = (TextView) findViewById(R.id.textView9);
         TextView anuncio4 = (TextView) findViewById(R.id.textView10);
         TextView dataAnuncio4 = (TextView) findViewById(R.id.textView11);
 
         anuncio1.setText("Levar autorização de visita ao Museu, que foi entregue ao aluno, assinada pelo encarregado de educação");
-        dataAnuncio1.setText("Data: 24/5/2019");
+        dataAnuncio1.setText("Data: 28/5/2019");
 
         anuncio2.setText(strNovoAnuncio);
         dataAnuncio2.setText(dataNovoAnuncio);
 
- /*
+/*
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabLayout);
         // verifica qual tab esta selecionada
-        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
-            @Override
-            public void onTabSelected(TabLayout.Tab tab) {
-                // while selecting the tab
-            }
-        });
+        TabLayout.TabLayoutOnPageChangeListener(TabLayout tabLayout) {
+            //TextView anuncio3 = (TextView) findViewById(R.id.textView8);
+            //anuncio3.setText(tabLayout.getSelectedTabPosition());
+        }
 
         if(!(tabLayout.getSelectedTabPosition()==0)){
             anuncio1.setVisibility(View.INVISIBLE);
