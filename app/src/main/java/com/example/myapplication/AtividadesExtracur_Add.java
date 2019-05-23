@@ -61,11 +61,12 @@ public class AtividadesExtracur_Add extends AppCompatActivity {
             dataNovaAtiv = "Data: "+ dataAtiv.getDayOfMonth()+"/"+ dataAtiv.getMonth()+"/"+dataAtiv.getYear();
         } else {
             tituloNovaAtiv = "";
+            descNovaAtiv = "";
             dataNovaAtiv= "";
         }
 
-        navigateUpTo(new Intent(getBaseContext(), MainActivity.class));
-        Toast.makeText(this,"Atividade Adicionada.", Toast.LENGTH_SHORT).show();
+        navigateUpTo(new Intent(getBaseContext(), AtividadesExtracur.class));
+        Toast.makeText(this,"Atividade Adicionado.", Toast.LENGTH_SHORT).show();
         return true;
     }
 }
