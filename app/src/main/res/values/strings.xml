@@ -47,4 +47,5 @@
     <string name="dataAtiv">Data: 21/05/2019</string>
     <string name="persona">Ana Marisa Rondão</string>
     <string name="info_pessoal">INFORMAÇÃO PESSOAL</string>
+    <string name="textview1">TextView</string>
 </resources>
