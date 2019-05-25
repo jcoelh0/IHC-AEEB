@@ -9,16 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Conversas"
+        <activity android:name=".Pautas"
+            android:label="Pautas"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+            android:name=".Conversas"
             android:label="Conversas"
             android:parentActivityName=".MainActivity"
-            android:windowSoftInputMode="adjustResize">
-        </activity>
+            android:windowSoftInputMode="adjustResize"></activity>
         <activity
             android:name=".MeusDados"
             android:label="Meus Dados"
-            android:parentActivityName=".MainActivity">
-        </activity>
+            android:parentActivityName=".MainActivity"></activity>
         <activity
             android:name=".Horario"
             android:label="Horário"

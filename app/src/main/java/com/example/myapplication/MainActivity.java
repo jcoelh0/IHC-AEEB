@@ -104,6 +104,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button pautasBttn = findViewById(R.id.button7);
+        pautasBttn.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                System.out.println("Button Clicked");
+                Intent pautas = new Intent(getApplicationContext(), Pautas.class);
+                startActivity(pautas);
+            }
+        });
+
     }
 
     @Override
