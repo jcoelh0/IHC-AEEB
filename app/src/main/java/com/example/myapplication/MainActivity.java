@@ -3,17 +3,13 @@ package com.example.myapplication;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.Switch;
 import android.widget.TextView;
-import android.widget.Toast;
-import android.widget.ToggleButton;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -104,12 +100,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button pautasBttn = findViewById(R.id.button7);
-        pautasBttn.setOnClickListener(new View.OnClickListener() {
+        Button pautaBttn = findViewById(R.id.button7);
+        pautaBttn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 System.out.println("Button Clicked");
-                Intent pautas = new Intent(getApplicationContext(), Pautas.class);
-                startActivity(pautas);
+                Intent pauta = new Intent(getApplicationContext(), Pauta.class);
+                startActivity(pauta);
             }
         });
 

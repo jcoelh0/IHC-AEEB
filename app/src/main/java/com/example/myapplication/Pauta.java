@@ -3,11 +3,11 @@ package com.example.myapplication;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class Pautas extends AppCompatActivity {
+public class Pauta extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pautas);
+        setContentView(R.layout.activity_pauta);
     }
 }
