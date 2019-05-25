@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MeusDados"
+        <activity android:name=".Conversas"
+            android:label="Conversas"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+            android:name=".MeusDados"
             android:label="Meus Dados"
             android:parentActivityName=".MainActivity">
         </activity>
