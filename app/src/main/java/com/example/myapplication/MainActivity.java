@@ -95,6 +95,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button conversasBttn = findViewById(R.id.button6);
+        conversasBttn.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                System.out.println("Button Clicked");
+                Intent conversas = new Intent(getApplicationContext(), Conversas.class);
+                startActivity(conversas);
+            }
+        });
+
     }
 
     @Override

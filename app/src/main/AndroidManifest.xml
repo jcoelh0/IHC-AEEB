@@ -11,7 +11,8 @@
         android:theme="@style/AppTheme">
         <activity android:name=".Conversas"
             android:label="Conversas"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="adjustResize">
         </activity>
         <activity
             android:name=".MeusDados"
