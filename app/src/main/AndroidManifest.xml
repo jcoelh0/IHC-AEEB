@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Pauta"
+        <activity
+            android:name=".Pauta"
             android:label="Pauta"
             android:parentActivityName=".MainActivity">
         </activity>

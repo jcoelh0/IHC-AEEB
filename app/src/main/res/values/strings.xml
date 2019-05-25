@@ -70,4 +70,6 @@
     </string-array>
     <string name="aluno">Aluno:</string>
     <string name="data">03/05/2019</string>
+    <string name="disciplinas">DISCIPLINAS</string>
+    <string name="notas">NOTAS</string>
 </resources>
