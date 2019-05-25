@@ -109,6 +109,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button faltasBttn = findViewById(R.id.button8);
+        faltasBttn.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                System.out.println("Button Clicked");
+                Intent faltas = new Intent(getApplicationContext(), Faltas.class);
+                startActivity(faltas);
+            }
+        });
     }
 
     @Override
