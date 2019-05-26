@@ -25,8 +25,8 @@ public class Anuncios extends AppCompatActivity {
         TextView dataAnuncio2 = (TextView) findViewById(R.id.textView7);
         //TextView anuncio3 = (TextView) findViewById(R.id.textView8);
         TextView dataAnuncio3 = (TextView) findViewById(R.id.textView9);
-        TextView anuncio4 = (TextView) findViewById(R.id.textView10);
-        TextView dataAnuncio4 = (TextView) findViewById(R.id.textView11);
+        TextView anuncio4 = (TextView) findViewById(R.id.textView11);
+        TextView dataAnuncio4 = (TextView) findViewById(R.id.textView10);
 
         anuncio1.setText("Levar autorização de visita ao Museu, que foi entregue ao aluno, assinada pelo encarregado de educação");
         dataAnuncio1.setText("Data: 28/5/2019");

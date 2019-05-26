@@ -10,14 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".Faltas_Add"
+            android:label="Marcar Faltas/Presenças"
+            android:parentActivityName=".Faltas">
+        </activity>
+        <activity
             android:name=".Faltas"
             android:label="Faltas"
-            android:parentActivityName=".MainActivity">
-        </activity>
+            android:parentActivityName=".MainActivity"></activity>
         <activity
             android:name=".Pauta"
             android:label="Pauta"
-            android:parentActivityName=".MainActivity"></activity>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".Conversas"
             android:label="Conversas"

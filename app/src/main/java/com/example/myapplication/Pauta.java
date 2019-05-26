@@ -37,6 +37,7 @@ public class Pauta extends AppCompatActivity {
         lv1.setAdapter(arrayAdapter1);
         arrayAdapter1.notifyDataSetChanged();
 
+
         //notas
         final ListView lv2 = (ListView) findViewById(R.id.listView2);
 

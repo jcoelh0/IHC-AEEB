@@ -72,4 +72,10 @@
     <string name="data">03/05/2019</string>
     <string name="disciplinas">DISCIPLINAS</string>
     <string name="notas">NOTAS</string>
+    <string name="motivo">Motivo</string>
+    <string name="comentarios">Comentários</string>
+    <string name="btn_faltas">Confirmar</string>
+    <string name="alunos">ALUNOS</string>
+    <string name="falta">F</string>
+    <string name="presenca">P</string>
 </resources>
