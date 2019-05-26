@@ -11,8 +11,8 @@
         android:layout_width="412dp"
         android:layout_height="0dp"
         android:layout_marginTop="4dp"
-        android:layout_marginBottom="22dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        android:layout_marginBottom="73dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewMatematica"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -45,15 +45,41 @@
     </android.support.design.widget.TabLayout>
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/textViewEstudoMeio"
         android:layout_width="366dp"
         android:layout_height="0dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="20dp"
         android:layout_marginBottom="477dp"
         android:text="@string/EstudoMeio"
         android:textColor="@android:color/black"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textViewMatematica"
+        android:layout_width="366dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="28dp"
+        android:text="@string/Matematica"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewPortugues"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tabLayout2" />
+
+    <TextView
+        android:id="@+id/textViewPortugues"
+        android:layout_width="366dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="330dp"
+        android:text="@string/Portugues"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMatematica" />
 </android.support.constraint.ConstraintLayout>

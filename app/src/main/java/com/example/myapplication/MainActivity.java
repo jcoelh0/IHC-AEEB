@@ -8,12 +8,14 @@ import android.view.MenuInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
+import android.widget.Spinner;
 import android.widget.Switch;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
     private static boolean tipoUsuario;
+    private Spinner spinner;
 
     public static boolean getTipoUsuario(){
         return tipoUsuario;
@@ -23,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        spinner = findViewById(R.id.spinner);
 
         // variavel para objeto Switch seleciona tipo de usuario
         Switch usuarioSwitch = (Switch) findViewById(R.id.switch1);
@@ -139,8 +143,10 @@ public class MainActivity extends AppCompatActivity {
         TextView textElement = findViewById(R.id.textView4);
         if(tipoUsuario) {
             textElement.setText("Professor: Carlos Fonseca");
+            spinner.setVisibility(View.VISIBLE);
         } else {
             textElement.setText("Aluno: Ana Marisa Rondão");
+            spinner.setVisibility(View.GONE);
         }
     }
 
