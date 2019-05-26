@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
                 setElement(tipoUsuario);
             }
         });
-
+        usuarioSwitch.setChecked(tipoUsuario);
         setElement(tipoUsuario);
 
         Button anunciosBttn = findViewById(R.id.button5);
