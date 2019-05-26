@@ -52,4 +52,34 @@
     <string name="textview1">TextView</string>
     <string name="evento2">Reunião com pais de todas as turmas</string>
     <string name="dataEvento2">Data: 17 junho 2019</string>
+    <string name="hint1" />
+    <string-array name="alunos_array">
+        <item></item>
+        <item>Afonso Dias Coelho</item>
+        <item>Ana Marisa Rondão</item>
+        <item>Ana Rita Carvalho</item>
+        <item>Bruno Souza Moreira</item>
+        <item>Carolina Barbosa Ferreira</item>
+        <item>Daniel Mota Souza</item>
+        <item>Filipa Santos Marques</item>
+        <item>Gonçalo André Lima</item>
+        <item>João Pedro Paiva</item>
+        <item>Juliana Soares Pinho</item>
+        <item>Leonardo Filipe Silva</item>
+        <item>Mariana Andrade Pinto</item>
+        <item>Paula Pinheiro Santos</item>
+        <item>Pedro Brandão Lacerda</item>
+        <item>Tiago Ferreira Martins</item>
+        <item>Vitor Souza Lacerda</item>
+    </string-array>
+    <string name="aluno">Aluno:</string>
+    <string name="data">03/05/2019</string>
+    <string name="disciplinas">DISCIPLINAS</string>
+    <string name="notas">NOTAS</string>
+    <string name="motivo">Motivo</string>
+    <string name="comentarios">Comentários</string>
+    <string name="btn_faltas">Confirmar</string>
+    <string name="alunos">ALUNOS</string>
+    <string name="falta">F</string>
+    <string name="presenca">P</string>
 </resources>

@@ -95,6 +95,32 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button conversasBttn = findViewById(R.id.button6);
+        conversasBttn.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                System.out.println("Button Clicked");
+                Intent conversas = new Intent(getApplicationContext(), Conversas.class);
+                startActivity(conversas);
+            }
+        });
+
+        Button pautaBttn = findViewById(R.id.button7);
+        pautaBttn.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                System.out.println("Button Clicked");
+                Intent pauta = new Intent(getApplicationContext(), Pauta.class);
+                startActivity(pauta);
+            }
+        });
+
+        Button faltasBttn = findViewById(R.id.button8);
+        faltasBttn.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                System.out.println("Button Clicked");
+                Intent faltas = new Intent(getApplicationContext(), Faltas.class);
+                startActivity(faltas);
+            }
+        });
     }
 
     @Override

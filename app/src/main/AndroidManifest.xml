@@ -9,14 +9,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".Faltas_Add"
+            android:label="Marcar Faltas/Presenças"
+            android:parentActivityName=".Faltas"/>
+        <activity
+            android:name=".Faltas"
+            android:label="Faltas"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity
+            android:name=".Pauta"
+            android:label="Pauta"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".Conversas"
             android:label="Conversas"
-            android:parentActivityName=".MainActivity"></activity>
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".MeusDados"
             android:label="Meus Dados"
-            android:parentActivityName=".MainActivity"></activity>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".Horario"
             android:label="Horário"
