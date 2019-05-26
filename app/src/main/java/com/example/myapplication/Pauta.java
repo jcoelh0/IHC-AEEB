@@ -1,7 +1,10 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -57,4 +60,14 @@ public class Pauta extends AppCompatActivity {
         lv2.setAdapter(arrayAdapter2);
         arrayAdapter2.notifyDataSetChanged();
     }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        if(tipoUsuario){
+            getMenuInflater().inflate(R.menu.menu_edit, menu);
+        }
+        return true;
+    }
+
 }
