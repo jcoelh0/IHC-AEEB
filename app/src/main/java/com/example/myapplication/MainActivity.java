@@ -3,17 +3,13 @@ package com.example.myapplication;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.Switch;
 import android.widget.TextView;
-import android.widget.Toast;
-import android.widget.ToggleButton;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,14 +23,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //Toast.makeText(this,"Your Message", Toast.LENGTH_LONG).show();
 
         // variavel para objeto Switch seleciona tipo de usuario
         Switch usuarioSwitch = (Switch) findViewById(R.id.switch1);
-        if(tipoUsuario){
-            usuarioSwitch.setChecked(true);
-            setTextElement(tipoUsuario);
-        }
 
         // verifica o estado atual do Switch (true or false)
         usuarioSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -44,11 +35,11 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     tipoUsuario = false;
                 }
-                setTextElement(tipoUsuario);
+                setElement(tipoUsuario);
             }
         });
 
-        setTextElement(tipoUsuario);
+        setElement(tipoUsuario);
 
         Button anunciosBttn = findViewById(R.id.button5);
         anunciosBttn.setOnClickListener(new View.OnClickListener() {
@@ -95,6 +86,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button eventosBttn = findViewById(R.id.button4);
+        eventosBttn.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                System.out.println("Button Clicked");
+                Intent eventos = new Intent(getApplicationContext(), Eventos.class);
+                startActivity(eventos);
+            }
+        });
+
     }
 
     @Override
@@ -108,9 +108,9 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-    public void setTextElement(boolean tipoUsuario){
+    public void setElement(boolean tipoUsuario){
         // variavel para objeto TextView
-        TextView textElement = (TextView) findViewById(R.id.textView2);
+        TextView textElement = findViewById(R.id.textView4);
         if(tipoUsuario) {
             textElement.setText("Professor: Carlos Fonseca");
         } else {

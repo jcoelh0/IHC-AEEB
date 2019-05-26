@@ -14,22 +14,22 @@ public class MeusDados extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_meus_dados);
 
-        ImageView foto = (ImageView) findViewById(R.id.imageView);
-        TextView nome = (TextView) findViewById(R.id.textView1);
-        TextView dado1 = (TextView) findViewById(R.id.textView3);
-        TextView desc1 = (TextView) findViewById(R.id.textView4);
-        TextView dado2 = (TextView) findViewById(R.id.textView5);
-        TextView desc2 = (TextView) findViewById(R.id.textView6);
-        TextView dado3 = (TextView) findViewById(R.id.textView7);
-        TextView desc3 = (TextView) findViewById(R.id.textView8);
-        TextView dado4 = (TextView) findViewById(R.id.textView9);
-        TextView desc4 = (TextView) findViewById(R.id.textView10);
-        TextView dado5 = (TextView) findViewById(R.id.textView11);
-        TextView desc5 = (TextView) findViewById(R.id.textView12);
-        TextView dado6 = (TextView) findViewById(R.id.textView13);
-        TextView desc6 = (TextView) findViewById(R.id.textView14);
-        TextView dado7 = (TextView) findViewById(R.id.textView15);
-        TextView desc7 = (TextView) findViewById(R.id.textView16);
+        ImageView foto = findViewById(R.id.imageView);
+        TextView nome = findViewById(R.id.textView1);
+        TextView dado1 = findViewById(R.id.textView3);
+        TextView desc1 = findViewById(R.id.textView4);
+        TextView dado2 = findViewById(R.id.textView5);
+        TextView desc2 = findViewById(R.id.textView6);
+        TextView dado3 = findViewById(R.id.textView7);
+        TextView desc3 = findViewById(R.id.textView8);
+        TextView dado4 = findViewById(R.id.textView9);
+        TextView desc4 = findViewById(R.id.textView10);
+        TextView dado5 = findViewById(R.id.textView11);
+        TextView desc5 = findViewById(R.id.textView12);
+        TextView dado6 = findViewById(R.id.textView13);
+        TextView desc6 = findViewById(R.id.textView14);
+        TextView dado7 = findViewById(R.id.textView15);
+        TextView desc7 = findViewById(R.id.textView16);
 
         if(tipoUsuario){
             foto.setImageResource(R.drawable.carlos);

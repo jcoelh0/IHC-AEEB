@@ -17,8 +17,10 @@ import java.util.Date;
 
 public class Anuncios_Add extends AppCompatActivity {
 
-    private static String strNovoAnuncio = new String();
-    private static String dataNovoAnuncio = new String();
+
+    boolean first = false;
+    private static String strNovoAnuncio = "";
+    private static String dataNovoAnuncio = "";
 
     public static String getStrNovoAnuncio(){
         return strNovoAnuncio;
@@ -26,6 +28,17 @@ public class Anuncios_Add extends AppCompatActivity {
 
     public static String getDataNovoAnuncio(){
         return dataNovoAnuncio;
+    }
+
+    private static String strNovoAnuncio2 = "";
+    private static String dataNovoAnuncio2 = "";
+
+    public static String getStrNovoAnuncio2(){
+        return strNovoAnuncio2;
+    }
+
+    public static String getDataNovoAnuncio2(){
+        return dataNovoAnuncio2;
     }
 
     @Override
@@ -37,7 +50,6 @@ public class Anuncios_Add extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_certo, menu);
 
         return true;
@@ -45,12 +57,18 @@ public class Anuncios_Add extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        TextInputLayout descAnuncio = (TextInputLayout) findViewById(R.id.textInputLayout2);
-        DatePicker dataAnuncio = (DatePicker) findViewById(R.id.datePicker1);
+        TextInputLayout descAnuncio = findViewById(R.id.textInputLayout2);
+        DatePicker dataAnuncio = findViewById(R.id.datePicker1);
 
         if(item.getItemId()==R.id.novo_anuncio){
-            strNovoAnuncio = descAnuncio.getEditText().getText().toString();
-            dataNovoAnuncio = "Data: "+ dataAnuncio.getDayOfMonth()+"/"+ dataAnuncio.getMonth()+"/"+dataAnuncio.getYear();
+            if(!first) {
+                strNovoAnuncio = descAnuncio.getEditText().getText().toString();
+                dataNovoAnuncio = "Data: " + dataAnuncio.getDayOfMonth() + "/" + dataAnuncio.getMonth() + "/" + dataAnuncio.getYear();
+                first = true;
+            }else {
+                strNovoAnuncio2 = descAnuncio.getEditText().getText().toString();
+                dataNovoAnuncio2 = "Data: " + dataAnuncio.getDayOfMonth() + "/" + dataAnuncio.getMonth() + "/" + dataAnuncio.getYear();
+            }
         } else {
             strNovoAnuncio = "";
             dataNovoAnuncio= "";

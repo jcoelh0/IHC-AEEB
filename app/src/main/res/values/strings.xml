@@ -32,7 +32,7 @@
     <string name="descriçaovisita">Visita de estudo a uma fábrica de têxtil, assinar folha até ao dia 15/05/2019</string>
     <string name="descri_o">Descrição</string>
     <string name="atividade">Atividade</string>
-    <string name="ementaDia">Ementa dia 21/05/2019</string>
+    <string name="ementaDia">Ementa de almoço - dia 28/05/2019</string>
     <string name="segunda_feira">Segunda-feira</string>
     <string name="ter_a_feira">Terça-feira</string>
     <string name="quarta_feira">Quarta-feira</string>
@@ -47,5 +47,9 @@
     <string name="dataAtiv">Data: 21/05/2019</string>
     <string name="persona">Ana Marisa Rondão</string>
     <string name="info_pessoal">INFORMAÇÃO PESSOAL</string>
+    <string name="evento1">Visita de estudo a Mafra com a turma A e C</string>
+    <string name="dataEvento1">Data: 05 junho 2019</string>
     <string name="textview1">TextView</string>
+    <string name="evento2">Reunião com pais de todas as turmas</string>
+    <string name="dataEvento2">Data: 17 junho 2019</string>
 </resources>
