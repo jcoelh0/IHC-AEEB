@@ -64,6 +64,13 @@ public class Faltas_Add extends AppCompatActivity {
         return true;
     }
 
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        navigateUpTo(new Intent(getBaseContext(), Faltas.class));
+        Toast.makeText(this, "Faltas Atualizadas.", Toast.LENGTH_SHORT).show();
+        return true;
+    }
     /*
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
